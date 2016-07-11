@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2258" started-at="2016-07-11T16:07:05Z" finished-at="2016-07-11T16:07:07Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2258" started-at="2016-07-11T16:07:05Z" finished-at="2016-07-11T16:07:07Z">
+      <class name="top.fzqblog.test.service.ServiceTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:top.fzqblog.test.service.ServiceTest@43ee72e6]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="12" started-at="2016-07-12T00:07:05Z" finished-at="2016-07-12T00:07:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:top.fzqblog.test.service.ServiceTest@43ee72e6]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="1963" started-at="2016-07-12T00:07:05Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2016-07-12T00:07:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:top.fzqblog.test.service.ServiceTest@43ee72e6]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2016-07-12T00:07:07Z" finished-at="2016-07-12T00:07:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void top.fzqblog.test.service.ServiceTest.test() throws top.fzqblog.exception.BussinessException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="FAIL" signature="test()[pri:0, instance:top.fzqblog.test.service.ServiceTest@43ee72e6]" name="test" duration-ms="261" started-at="2016-07-12T00:07:07Z" finished-at="2016-07-12T00:07:07Z">
+          <exception class="top.fzqblog.exception.BussinessException">
+            <message>
+              <![CDATA[邮箱已存在]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[top.fzqblog.exception.BussinessException: 邮箱已存在
+]]>
+            </full-stacktrace>
+          </exception> <!-- top.fzqblog.exception.BussinessException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:top.fzqblog.test.service.ServiceTest@43ee72e6]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="3" started-at="2016-07-12T00:07:07Z" finished-at="2016-07-12T00:07:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void top.fzqblog.test.service.ServiceTest.test() throws top.fzqblog.exception.BussinessException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:top.fzqblog.test.service.ServiceTest@43ee72e6]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2016-07-12T00:07:07Z" finished-at="2016-07-12T00:07:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- top.fzqblog.test.service.ServiceTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>top.fzqblog</groupId>
+    <artifactId>FzqBlog</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>blog-web</artifactId>
+  <packaging>war</packaging>
+  
+ <dependencies>
+ 	<dependency>
+ 		  <groupId>top.fzqblog</groupId>
+		  <artifactId>blog-common</artifactId>
+	      <version>0.0.1-SNAPSHOT</version>
+ 	</dependency>
+ 	
+ 		<!-- jetty -->
+	<dependency>
+		<groupId>org.mortbay.jetty</groupId>
+		<artifactId>jetty</artifactId>
+		<version>6.1.22</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.mortbay.jetty</groupId>
+		<artifactId>jsp-2.1-jetty</artifactId>
+		<version>6.1.22</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.eclipse.jetty</groupId>
+		<artifactId>jetty-webapp</artifactId>
+		<scope>test</scope>
+		<version>7.2.2.v20101205</version>
+		<optional>true</optional>
+	</dependency>
+ </dependencies>
+</project>

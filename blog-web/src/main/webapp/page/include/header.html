@@ -1,0 +1,38 @@
+<nav class="navbar navbar-inverse" style="height: 70px;">
+  <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li class=""><a href="index">首页</a></li>
+        <li><a href="shuoshuo">说说</a></li>
+      </ul>
+	<ul class="nav navbar-nav navbar-right">
+			<#if !Session["session_user_key"]?exists>
+			 	<li><a href="login">登录</a></li>
+        		<li><a href="register">加入我们</a></li>
+        		<#else>
+				<li id="userheadicon"><img src="../../resources/images/${session_user_key.userIcon}" class="img-circle" id="headicon" width="70px" height="70px">
+				<div style="width:300px;" id="mypanel">
+					<div class="panel panel-success">
+					  <div class="panel-body">
+					    <div class="panel-user-info">
+					    <img src="../../resources/images/${session_user_key.userIcon}" class="img-rounded" width="70px" height="70px" />
+					    	&nbsp;&nbsp;<span class="panel-username">${session_user_key.userName}</span>
+					    	&nbsp;&nbsp;积分：<span class="usermark"></span>
+					    </div>
+					    <div class="panel-user-signin">
+					    	<a class="unsigninimage" id="signinimage"></a>
+					    	<div class="panel-user-signin-info">
+						    	<span class="signindate"></span>
+						    	<span class="usertotalsignin">总共签到<em></em>天</span>
+					    	</div>
+					    </div>
+					    <hr style="color: #fff;clear:both;">
+					    <div class="usre-action-panel">
+					    	<a href="logout">退出</a>
+					    </div>
+					  </div>
+					</div>					
+				</div>
+				</li>
+			</#if>
+		</ul>
+</nav>
